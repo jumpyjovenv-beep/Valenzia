@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f1eb">
+<meta name="description" content="VALENZIA — moda contemporánea, prendas esenciales y estilo que te define.">
+<title>VALENZIA — Moda que te define</title>
+<style>
+:root{--ink:#171715;--paper:#f5f1eb;--muted:#77736d;--line:#ded8cf;--white:#fffdf9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button,input{font:inherit}.announcement{background:var(--ink);color:#fff;text-align:center;padding:10px 16px;font-size:11px;letter-spacing:.15em;text-transform:uppercase}.nav{height:82px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(245,241,235,.96);gap:20px}.logo{font-family:Georgia,'Times New Roman',serif;font-size:clamp(29px,3.5vw,42px);letter-spacing:.17em;font-weight:400}.navlinks{display:flex;gap:30px;font-size:13px}.navlinks a:hover,.footer a:hover{opacity:.6}.menu-btn{display:none;border:1px solid var(--line);background:transparent;padding:8px 12px}.hero{min-height:480px;display:grid;grid-template-columns: .85fr 1.15fr;background:#171715;color:#f7f2eb;overflow:hidden}.hero-copy{padding:clamp(40px,7vw,95px) 0 clamp(40px,6vw,70px) 9vw;align-self:center;z-index:1}.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase}.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,6vw,78px);line-height:.99;font-weight:400;margin:22px 0}.hero h1 em{font-weight:400}.hero p{color:#d8d1c8;line-height:1.7;font-size:14px;max-width:320px}.btn{display:inline-block;background:var(--paper);color:var(--ink);padding:15px 22px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--paper);cursor:pointer;margin-top:16px}.btn:hover{background:transparent;color:var(--paper)}.hero-image{min-height:480px;background:linear-gradient(90deg,#171715 0%,rgba(23,23,21,.05) 35%),url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1500&q=85') center 35%/cover no-repeat}.section{padding:55px 6vw}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category{height:190px;position:relative;background:#d9d3ca;overflow:hidden;cursor:pointer}.category img{width:100%;height:100%;object-fit:cover;transition:transform .5s;filter:brightness(.8)}.category:hover img{transform:scale(1.05)}.category span{position:absolute;bottom:17px;left:17px;color:#fff;font-size:12px;letter-spacing:.16em;text-transform:uppercase}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}.section h2{font:400 clamp(30px,4vw,43px) Georgia,'Times New Roman',serif;margin:0}.section-head p{font-size:13px;color:var(--muted);margin:8px 0 0}.tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:0 0 24px}.filter{border:1px solid var(--line);background:transparent;padding:10px 14px;font-size:11px;letter-spacing:.06em;cursor:pointer}.filter.active,.filter:hover{background:var(--ink);color:white;border-color:var(--ink)}.search{margin-left:auto;padding:10px 12px;border:1px solid var(--line);background:var(--white);min-width:190px;outline:none}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 15px}.product{min-width:0}.product-image{height:clamp(220px,30vw,390px);background:#e7e1d9;position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.product:hover .product-image img{transform:scale(1.035)}.tag{position:absolute;top:12px;left:12px;background:var(--white);padding:7px 9px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.product-info{padding:13px 2px}.product-title{font-size:13px;margin:0 0 7px}.price{font-size:13px;font-weight:600}.product-desc{color:var(--muted);font-size:11px;margin-top:7px;line-height:1.5}.details-btn{border:0;border-bottom:1px solid var(--ink);background:none;padding:8px 0 5px;margin-top:6px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}.empty{grid-column:1/-1;padding:35px 0;color:var(--muted)}.story{background:#e8e1d7;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}.story img{width:100%;max-height:420px;object-fit:cover}.story-copy{padding:25px 5vw 25px 0}.story-copy p{color:#5f5b55;font-size:14px;line-height:1.9;max-width:430px}.footer{background:var(--ink);color:#f6f1e9;padding:45px 6vw 22px}.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footer .logo{font-size:29px}.footer p,.footer a{font-size:12px;color:#c9c2b8;line-height:2}.footer h3{font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:400}.copyright{border-top:1px solid #494640;margin-top:30px;padding-top:18px;color:#9d978f;font-size:10px;display:flex;justify-content:space-between;gap:15px}.modal{display:none;position:fixed;inset:0;background:#0009;z-index:10;padding:20px;align-items:center;justify-content:center}.modal.open{display:flex}.modal-card{background:var(--paper);max-width:760px;width:100%;display:grid;grid-template-columns:1fr 1fr;position:relative}.modal-card img{width:100%;height:100%;min-height:350px;object-fit:cover}.modal-copy{padding:35px}.close{position:absolute;right:12px;top:8px;border:0;background:transparent;font-size:28px;cursor:pointer}.modal-copy h2{font:400 30px Georgia,serif}.modal-copy p{font-size:13px;line-height:1.7;color:var(--muted)}.sizes{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.sizes span{border:1px solid var(--line);padding:8px 10px;font-size:11px}
+@media(max-width:800px){.nav{height:70px;padding:0 5vw}.navlinks{gap:15px}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 8vw 48px}.hero-image{min-height:300px;background-position:center 35%}.categories{grid-template-columns:repeat(2,1fr)}.category{height:165px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.product-image{height:clamp(220px,65vw,380px)}.section{padding:42px 5vw}.story{grid-template-columns:1fr;gap:10px}.story-copy{padding:20px 0}.footer-top{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}
+@media(max-width:520px){.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:var(--paper);padding:20px 6vw;z-index:5;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.show{display:flex}.menu-btn{display:block}.logo{font-size:27px}.section-head{align-items:start;flex-direction:column}.search{margin-left:0;width:100%}.tools{gap:7px}.filter{padding:9px 10px}.footer-top{grid-template-columns:1fr 1fr}.copyright{flex-direction:column}.modal-card{grid-template-columns:1fr;max-height:90vh;overflow:auto}.modal-card img{min-height:230px;height:250px}.modal-copy{padding:24px}.hero h1{font-size:52px}}
+</style>
+</head>
+<body>
+<div class="announcement">Moda que te acompaña · Colección contemporánea</div>
+<header class="nav">
+  <a class="logo" href="#" aria-label="VALENZIA inicio">VALENZIA</a>
+  <nav class="navlinks" id="navlinks"><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">Menú</button>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy"><div class="eyebrow">Nueva colección</div><h1>Estilo que<br><em>te define.</em></h1><p>Prendas esenciales, detalles cuidados y una forma de vestir que habla por ti.</p><a class="btn" href="#catalogo">Explorar catálogo&nbsp; →</a></div>
+  <div class="hero-image" role="img" aria-label="Campaña editorial de moda"></div>
+</section>
+<section class="section" aria-label="Categorías">
+  <div class="categories">
+    <a class="category" href="#catalogo" data-category-link="Hombre"><img loading="lazy" src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=700&q=80" alt="Moda masculina"><span>Hombre ↗</span></a>
+    <a class="category" href="#catalogo" data-category-link="Mujer"><img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Moda femenina"><span>Mujer ↗</span></a>
+    <a class="category" href="#catalogo" data-category-link="Buzos"><img loading="lazy" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80" alt="Buzos"><span>Buzos ↗</span></a>
+    <a class="category" href="#catalogo" data-category-link="Accesorios"><img loading="lazy" src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=700&q=80" alt="Accesorios de moda"><span>Accesorios ↗</span></a>
+  </div>
+</section>
+<section class="section" id="catalogo">
+  <div class="section-head"><div><h2>Selección destacada</h2><p>Encuentra tus próximos favoritos.</p></div><span class="eyebrow">VALENZIA / 01</span></div>
+  <div class="tools" id="filters">
+    <button class="filter active" data-filter="Todos">Todo</button><button class="filter" data-filter="Hombre">Hombre</button><button class="filter" data-filter="Mujer">Mujer</button><button class="filter" data-filter="Buzos">Buzos</button><button class="filter" data-filter="Accesorios">Accesorios</button>
+    <input class="search" id="search" type="search" placeholder="Buscar una prenda…" aria-label="Buscar productos">
+  </div>
+  <div class="products" id="products"></div>
+</section>
+<section class="section story" id="nosotros">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1100&q=85" alt="Interior de una boutique de moda">
+  <div class="story-copy"><div class="eyebrow">Nuestra esencia</div><h2>Menos ruido.<br>Más estilo.</h2><p>En VALENZIA creemos en vestir con intención. Una selección de prendas versátiles para acompañarte todos los días, con una estética sencilla, actual y atemporal.</p></div>
+</section>
+</main>
+<footer class="footer" id="contacto">
+  <div class="footer-top"><div class="footer-brand"><a class="logo" href="#inicio">VALENZIA</a><p>Moda, calidad y estilo en un solo lugar.</p></div><div><h3>Explora</h3><p><a href="#inicio">Inicio</a><br><a href="#catalogo">Catálogo</a><br><a href="#nosotros">Nosotros</a></p></div><div><h3>Contacto</h3><p>¿Tienes preguntas sobre una prenda?<br>Agrega aquí tus datos de contacto o redes sociales.</p></div></div>
+  <div class="copyright"><span>© <span id="year"></span> VALENZIA. Todos los derechos reservados.</span><span>Una marca con estilo propio.</span></div>
+</footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" id="closeModal" aria-label="Cerrar">×</button><img id="modalImage" src="" alt=""><div class="modal-copy"><div class="eyebrow">VALENZIA / DETALLE</div><h2 id="modalTitle"></h2><div class="price" id="modalPrice"></div><p id="modalDesc"></p><div class="eyebrow">Tallas disponibles (demo)</div><div class="sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div><p>Este catálogo es una muestra inicial. Actualiza los productos, precios y tallas antes de publicar tu tienda.</p></div></div></div>
+<script>
+const products = [
+ {name:"Camiseta Essential",category:"Hombre",price:89900,tag:"Favorito",sizes:"S · M · L · XL",desc:"Camiseta de corte relajado para combinar a tu manera.",img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85"},
+ {name:"Top Minimal",category:"Mujer",price:59900,tag:"Esencial",sizes:"S · M · L",desc:"Una silueta limpia y versátil para looks de día o de noche.",img:"https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=85"},
+ {name:"Buzo Relaxed",category:"Buzos",price:129900,tag:"Nuevo",sizes:"S · M · L · XL",desc:"Una capa cómoda con una estética minimalista.",img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85"},
+ {name:"Camisa Overshirt",category:"Hombre",price:149900,tag:"Selección",sizes:"S · M · L · XL",desc:"Una prenda de estructura ligera para elevar cualquier conjunto.",img:"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85"},
+ {name:"Bolso Daily",category:"Accesorios",price:119900,tag:"Versátil",sizes:"Única",desc:"Un complemento funcional con líneas sencillas.",img:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85"},
+ {name:"Vestido Studio",category:"Mujer",price:139900,tag:"Nuevo",sizes:"S · M · L",desc:"Diseño contemporáneo para crear un look sin esfuerzo.",img:"https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85"},
+ {name:"Gorra Classic",category:"Accesorios",price:49900,tag:"Esencial",sizes:"Única",desc:"El detalle final para un estilo relajado.",img:"https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=85"},
+ {name:"Pantalón Everyday",category:"Hombre",price:129900,tag:"Versátil",sizes:"28 · 30 · 32 · 34",desc:"Una base fácil de combinar para todos los días.",img:"https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=85"}
+];
+products[7].img="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=85";
+let activeFilter="Todos";
+const productEl=document.getElementById("products");
+const money=n=>n.toLocaleString("es-CO",{style:"currency",currency:"COP",maximumFractionDigits:0});
+function render(){
+ const q=document.getElementById("search").value.trim().toLowerCase();
+ const filtered=products.filter(p=>(activeFilter==="Todos"||p.category===activeFilter)&&(`${p.name} ${p.category} ${p.desc}`).toLowerCase().includes(q));
+ productEl.innerHTML=filtered.length?filtered.map(p=>`<article class="product"><div class="product-image"><img loading="lazy" src="${p.img}" alt="${p.name}"><span class="tag">${p.tag}</span></div><div class="product-info"><p class="product-title">${p.name}</p><div class="price">${money(p.price)}</div><div class="product-desc">${p.category} · Tallas: ${p.sizes}</div><button class="details-btn" data-product="${products.indexOf(p)}">Ver detalles&nbsp; ↗</button></div></article>`).join(""):'<p class="empty">No encontramos prendas con esa búsqueda.</p>';
+}
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("[data-filter]");if(!b)return;activeFilter=b.dataset.filter;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render()});
+document.querySelectorAll("[data-category-link]").forEach(a=>a.addEventListener("click",()=>{activeFilter=a.dataset.categoryLink;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x.dataset.filter===activeFilter));render()}));
+document.getElementById("search").addEventListener("input",render);
+const modal=document.getElementById("modal");
+productEl.addEventListener("click",e=>{const b=e.target.closest("[data-product]");if(!b)return;const p=products[Number(b.dataset.product)];document.getElementById("modalImage").src=p.img;document.getElementById("modalImage").alt=p.name;document.getElementById("modalTitle").textContent=p.name;document.getElementById("modalPrice").textContent=money(p.price);document.getElementById("modalDesc").textContent=p.desc+" Categoría: "+p.category+". Tallas: "+p.sizes+".";modal.classList.add("open")});
+function closeModal(){modal.classList.remove("open")}document.getElementById("closeModal").addEventListener("click",closeModal);modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("navlinks").classList.toggle("show"));document.querySelectorAll("#navlinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navlinks").classList.remove("show")));
+document.getElementById("year").textContent=new Date().getFullYear();render();
+</script>
+</body>
+</html>
